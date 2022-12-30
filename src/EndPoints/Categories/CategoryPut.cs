@@ -17,9 +17,12 @@ public class CategoryPut
         {
             return Results.NotFound("Category not Found");
         }
-        category.Name = categoryRequest.Name;
-        category.Active = categoryRequest.Active;
-        category.EditedOn = DateTime.Now;
+        category.EditInfo(categoryRequest.Name, categoryRequest.Active);
+
+        if (!category.IsValid)
+        {
+            return Results.ValidationProblem(category.Notifications.ConvertToProblemDetails());
+        }
 
         context.SaveChanges();
 
