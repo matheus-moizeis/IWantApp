@@ -13,6 +13,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     options.Password.RequireUppercase = false;
 }).AddEntityFrameworkStores<ApplicationDbContext>();
 
+builder.Services.AddScoped<QueryAllUsersWithClaimName>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
