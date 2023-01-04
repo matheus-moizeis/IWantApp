@@ -20,11 +20,12 @@ public class Category : Entity
 
     }
 
-    public void EditInfo(string name, bool active)
+    public void EditInfo(string name, bool active, string editedBy)
     {
         Active = active;
         Name = name;
         EditedOn = DateTime.Now;
+        EditedBy = editedBy;
         Validate();
     }
 
