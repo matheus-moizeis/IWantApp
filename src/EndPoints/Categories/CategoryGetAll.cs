@@ -1,7 +1,4 @@
-﻿using IWantApp.Domain.Products;
-using IWantApp.Infra.Data;
-
-namespace IWantApp.EndPoints.Categories;
+﻿namespace IWantApp.EndPoints.Categories;
 
 public class CategoryGetAll
 {
