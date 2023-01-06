@@ -18,6 +18,8 @@
 		<Using Include="Microsoft.AspNetCore.Authentication.JwtBearer"/>
 		<Using Include="Microsoft.IdentityModel.Tokens"/>
 		<Using Include="System.Text"/>
+		<Using Include="Microsoft.Data.SqlClient"/>
+		<Using Include="Microsoft.AspNetCore.Diagnostics"/>
 	
 
 		<Using Include="IWantApp.Domain.Products"/>
