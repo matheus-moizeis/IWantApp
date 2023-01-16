@@ -20,16 +20,17 @@
 		<Using Include="System.Text" />
 		<Using Include="Microsoft.Data.SqlClient" />
 		<Using Include="Microsoft.AspNetCore.Diagnostics" />
-	
+
 
 		<Using Include="IWantApp.Domain.Products" />
 		<Using Include="IWantApp.Infra.Data" />
 		<Using Include="IWantApp.Endpoints.Security" />
 		<Using Include="IWantApp.EndPoints.Categories" />
 		<Using Include="IWantApp.EndPoints.Employees" />
+		<Using Include ="IWantApp.EndPoints.Products"/>
 
 	</ItemGroup>
-	
+
 	<ItemGroup>
 		<PackageReference Include="Dapper" Version="2.0.123" />
 		<PackageReference Include="Flunt" Version="2.0.5" />
